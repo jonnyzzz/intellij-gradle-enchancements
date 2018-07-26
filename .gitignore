@@ -1,0 +1,12 @@
+.gradle/
+build/
+*.iml
+out/
+.DS_Store
+.idea/
+cmake-*/
+KotlinCMakeModule/
+CMakeLists.txt
+.teamcity/target
+target/
+docker-compose-data/
