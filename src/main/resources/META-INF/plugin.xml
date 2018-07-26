@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>org.jonnyzzz.gradle.ij</id>
+    <name>Gradle Enhancements for IntelliJ</name>
+    <version>1.0</version>
+    <idea-version since-build="182.671" />
+    <vendor url="https://jonnyzzz.com">@jonnyzzz</vendor>
+    <description>A plugin to improve current Gradle support</description>
+    <change-notes/>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.plugins.gradle</depends>
+
+    <project-components>
+        <component>
+            <implementation-class>org.jonnyzzz.gradle.ij.GradleTreeStructureFix</implementation-class>
+        </component>
+    </project-components>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <treeStructureProvider implementation="org.jonnyzzz.gradle.ij.GradleTreeStructureFix"/>
+    </extensions>
+
+
+</idea-plugin>
